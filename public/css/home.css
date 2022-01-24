@@ -1,0 +1,410 @@
+*{
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+    font-family: 'Roboto', sans-serif;
+    }
+
+
+body{
+    background-color: #ebebeb;
+   
+ }
+
+/*HEADER*/
+header{
+    background-color: #EAC926;
+    height: 240px;
+    padding: 10px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header .form input{/*barra buscador*/
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #666;
+    border: none;
+    font-size: 15px;
+}
+
+header .form .search_button{ /*botón lupa*/
+    background: #ffffff;
+    border: none;
+    height: 21px;
+}
+
+
+.navbar{
+    display: none;
+   /*Solo para la versión mobile, ocultar el site y el login navbar.*/
+   
+}
+
+section.banner img{
+    width: 100%;   
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+
+/*SECCION PRODUCTOS*/
+
+/*Titulares de las secciones*/
+h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.precio {
+    font-size: 16px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin: 10px; /*Entre cada artículo hay una separación de 10 píxeles.*/
+    cursor: pointer;
+    height: 325px;
+    overflow: hidden;
+    transition: all 0.3s;
+       
+}
+
+article:hover{
+    height: 380px;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+   }
+    
+article img{
+    width: 90%; /*Debemos centrar la sección ¿main? y que ocupe un 90% del ancho de la pantalla.*/   
+} 
+
+
+.product_detalles{
+    position: relative;
+    border-top: 1px solid #bebdbd; /* Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color #ebebeb*/
+    background-color: #fff;
+    width: 90%;
+    padding: 15px;  /*.Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus  lados.*/          
+}
+
+.last-visit .product_detalles .flex_container{
+
+    display: block;
+    color: #39b54a;
+    font-size: 18px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.fa-truck{
+    transition: 0.5s;}
+
+.fa-truck:hover{
+    transform: rotate(-90deg)}
+
+
+
+.price_descuento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price_descuento .precio{
+    width: 30%;
+}
+
+.price_descuento .descuento{
+    width: 60%;
+}
+
+
+/* FOOTER*/
+.icons-footer {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+footer h3 {
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+   
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 15px;
+    margin: 5px;
+    
+}
+.copyright{
+    text-align: left;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+/*VERSION TABLETS*/
+@media (min-width: 700px) and (max-width: 1200px){
+
+    header{
+        height: 200px;
+    }
+
+    .top-header{/*Logo, Buscador y Texto de cuotas*/
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .logo{
+        width: 25%;
+    }
+    
+     h4{
+         text-align: center; font-size: 16px;
+    }
+
+    .menu_nav, .login{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar{
+        display: block;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;       
+
+    }
+
+    .menu_nav .login, li{
+        margin: 6px;
+       
+     }
+     .menu_nav, .login, li a{
+       text-decoration: none;
+       color: rgb(3, 3, 3);
+     }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .last-visit{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    article{
+        max-width: 47%;
+        height: 400px; 
+     
+    }
+
+    article:hover{
+        height: 450px;
+    }
+
+    .footer-text{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 33%;
+        justify-content: space-around;
+    }
+    
+    .icons-footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+    }
+
+}
+
+/*VERSION DESKTOP*/
+@media (min-width: 1201px){
+
+    header{
+        height: 300px;
+    }
+
+    .top-header{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    header .form input{
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    header .form .search_button{ /*botón lupa*/
+        height: 50px;
+        font-size: 25px; 
+    }
+
+    .logo{
+        width: 350px;
+    }
+
+    .menu_nav, .login{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar{
+        display: block;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;       
+    }
+
+    
+    .menu_nav .login, li{
+        margin: 6px;
+        
+    }
+    .menu_nav, .login, li a{
+        text-decoration: none;
+        color: rgb(3, 3, 3);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+
+    h4{
+        font-size: 25px;
+     } 
+
+    .precio{
+        font-size: 25px; 
+    }
+    .descuento{
+        font-size: 20px; 
+    }
+
+    .description_product {
+        font-size: 25px; 
+    }
+
+    article{
+        max-width: 23%;
+        height: 550px;    
+    }
+
+    
+    article:hover{
+        height: 650px;
+    }
+
+    .fa-truck{
+        font-size: 20px;}
+
+    .last-visit{
+            display: flex;
+            flex-wrap: wrap; 
+    }
+
+    .last-visit .product_detalles .flex_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+    
+    }    
+
+    .footer-text{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30%;
+        justify-content: space-around;
+    }
+    
+    .icons-footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        color: #1259c3;
+        text-align: center;
+        font-size: 4em;
+        margin-bottom: 10px;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    footer h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+}
