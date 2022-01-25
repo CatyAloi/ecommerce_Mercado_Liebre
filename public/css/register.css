@@ -1,15 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
+    }
 
 
 body{
     background-color: #ebebeb;
    
  }
+
+ .container_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .form_register{
    
@@ -74,6 +80,8 @@ input[type=radio] {
     margin: 5px;
 }
 
+
+
 input[type=checkbox] {
     border: 0px;
     width: 22px;
@@ -107,8 +115,4 @@ input[type=checkbox] {
     margin-bottom: 15px;
     cursor: pointer;
 }
-.container_register{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+

@@ -50,10 +50,6 @@ header .form .search_button{ /*botón lupa*/
    
 }
 
-section.banner img{
-    width: 100%;   
-}
-
 div.burger-menu{
     text-align: center;
 }
@@ -69,6 +65,10 @@ div.burger-menu i{
     width: 40px;
 }
 
+/*SECCION BANNER*/
+section.banner img{
+    width: 100%;   
+}
 
 
 /*SECCION PRODUCTOS*/
@@ -140,7 +140,6 @@ article img{
 
 .fa-truck:hover{
     transform: rotate(-90deg)}
-
 
 
 .price_descuento{
@@ -227,13 +226,14 @@ footer {
     }
 
     .menu_nav .login, li{
-        margin: 6px;
+        margin: 4px;
        
      }
-     .menu_nav, .login, li a{
+
+    .menu_nav, .login, li a{
        text-decoration: none;
        color: rgb(3, 3, 3);
-     }
+    }
 
     .burger-menu{
         display: none;
@@ -241,7 +241,9 @@ footer {
 
     .last-visit{
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    
     }
     article{
         max-width: 47%;
@@ -277,7 +279,7 @@ footer {
 @media (min-width: 1201px){
 
     header{
-        height: 300px;
+        height: 280px;
     }
 
     .top-header{
@@ -333,6 +335,11 @@ footer {
         font-size: 25px;
      } 
 
+     h2 {
+        font-size: 40px;
+      
+    }
+
     .precio{
         font-size: 25px; 
     }
@@ -360,6 +367,7 @@ footer {
     .last-visit{
             display: flex;
             flex-wrap: wrap; 
+            justify-content: space-between;
     }
 
     .last-visit .product_detalles .flex_container{
@@ -393,6 +401,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+       
     }
 
     footer p {
