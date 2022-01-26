@@ -10,14 +10,18 @@ body{
    
  }
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 .form_login{
-    box-sizing: border-box;
+    width: 90%;
     background: #ebebeb;
-    width: 40%;
-    margin: auto;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 100px;
+    margin-bottom: 100px;
     border: none;
     outline: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -33,7 +37,7 @@ body{
     height: 60px;
     padding: 7px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 12px;
     border: none;
     background: #fff;
     border-radius: 8px;
@@ -49,13 +53,13 @@ body{
 
 
  .ca_label{
-    font-size: 20px;
+    font-size: 16px;
  }
 
  .btn_login{
     text-align: center;
-    background:#666;
-    padding: 15px;
+    background:#1259c3;;
+    padding: 10px;
     border: none;
     border-radius: 8px;
     width: 100%;
@@ -67,10 +71,30 @@ body{
 .btn_login{
     text-decoration: none;
     color:rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .btn_login:hover{
     background-color:#0022AA;
+    font-size: 22px;
    
+}
+
+/*VERSION TABLETS*/
+@media (min-width: 768px) {
+
+    .form_login{
+        width: 60%;}
+    
+
+}
+
+
+/*VERSION DESKTOP*/
+@media (min-width: 1024px) {
+
+    .form_login{
+        width: 30%;}
+    
+
 }

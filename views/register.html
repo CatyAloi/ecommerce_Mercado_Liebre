@@ -21,7 +21,7 @@ rel="stylesheet" />
                 </div>
 
                 <form class="form" action="" method="GET">
-                    <input type="search" placeholder="Buscar productos,marcas" class="search"/>  
+                    <input type="search" placeholder="Buscar productos, marcas" class="search"/>  
                     <button class="search_button"><i class="fas fa-search"></i></button>
                 </form>
 
@@ -64,11 +64,11 @@ rel="stylesheet" />
             <h2 class="title_register">Registrate</h2>
             <input class="style_input" type="text" name = "Nombre" placeholder="Nombre y Apellido" required maxlength="45">
             <input class="style_input" type="text" name = "Usuario" placeholder="Nombre de usuario" required maxlength="45">
-            <input class="style_input" type="text" name = "Email" placeholder="E-mail" required><span class= "feedback"></span>
+            <input class="style_input" type="email" name = "Email" placeholder="E-mail" required><span class= "feedback"></span>
             <label class="style_label style_bold" for="">Fecha de Nacimiento</label> <br>
             <input class="style_input" type="date" name="Fecha Nacimiento" value ="date_nac" required>
             <input class="style_input" type="text" name = "Domicilio" placeholder="Domicilio" required maxlength="45">
-            <input class="style_input" type="text" name = "Telefono" placeholder="Teléfono" required maxlength="45">
+            <input class="style_input" type="number" name = "Telefono" placeholder="Teléfono" required maxlength="45">
 
             <div class="perfil_usuario">
                 <label class="style_label style_bold" for="perfil">Perfil del usuario</label><br>
@@ -101,9 +101,11 @@ rel="stylesheet" />
                 <input class="style_input" type="password" name = "Conraseña" placeholder="Confirmar Contraseña" required maxlength="45">
             </div>
             
-        
-            <button id="btn_reset" type="reset">Borrar Datos</button>
-            <button id="btn_enviar" type="submit">Crear Cuenta</button>  
+            <div class="botones">
+                <button id="btn_reset" type="reset">Borrar Datos</button>
+                <button id="btn_enviar" type="submit">Crear mi Cuenta</button> 
+            </div>
+             
             
         </form>
     </div>  

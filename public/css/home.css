@@ -35,12 +35,14 @@ header .form input{/*barra buscador*/
     color: #666;
     border: none;
     font-size: 15px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 header .form .search_button{ /*botón lupa*/
     background: #ffffff;
     border: none;
-    height: 21px;
+    height: 20px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 
@@ -95,7 +97,7 @@ article {
     background: #fff;
     margin: 10px; /*Entre cada artículo hay una separación de 10 píxeles.*/
     cursor: pointer;
-    height: 325px;
+    height: 320px;
     overflow: hidden;
     transition: all 0.3s;
        
@@ -219,7 +221,7 @@ footer {
 
     .navbar{
         display: block;
-        font-size: 16px;
+        font-size: 12px;
         display: flex;
         justify-content: space-between;       
 
@@ -245,14 +247,14 @@ footer {
         justify-content: space-between; 
     
     }
-    article{
+    article{/*acortamos el alto del contenedor para que no muestre la descripción del producto*/
         max-width: 47%;
-        height: 400px; 
+        height: 380px; 
      
     }
 
-    article:hover{
-        height: 450px;
+    article:hover{/*permite visualizar la descripción del producto*/
+        height: 440px;
     }
 
     .footer-text{
@@ -271,6 +273,19 @@ footer {
     }
     .footer{
         display: flex;
+       
+    }
+  
+    footer p {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    footer h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
     }
 
 }
@@ -292,7 +307,7 @@ footer {
     header .form input{
         width: 400px;
         height: 50px;
-        font-size: 30px;
+        font-size: 18px;
     }
 
     header .form .search_button{ /*botón lupa*/
@@ -311,7 +326,7 @@ footer {
 
     .navbar{
         display: block;
-        font-size: 25px;
+        font-size: 16px;
         display: flex;
         justify-content: space-between;       
     }
@@ -332,33 +347,33 @@ footer {
     
 
     h4{
-        font-size: 25px;
+        font-size: 22px;
      } 
 
      h2 {
-        font-size: 40px;
+        font-size: 30px;
       
     }
 
     .precio{
-        font-size: 25px; 
+        font-size: 20px; 
     }
     .descuento{
         font-size: 20px; 
     }
 
     .description_product {
-        font-size: 25px; 
+        font-size: 20px; 
     }
 
     article{
         max-width: 23%;
-        height: 550px;    
+        height: 380px;    
     }
 
     
     article:hover{
-        height: 650px;
+        height: 450px;
     }
 
     .fa-truck{
@@ -407,13 +422,13 @@ footer {
     footer p {
         text-align: center;
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     footer h3 {
         text-align: center;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }
