@@ -7,8 +7,7 @@
 
 
 body{
-    background-color: #ebebeb;
-   
+    background-color: #ebebeb;  
  }
 
 /*HEADER*/
@@ -72,7 +71,6 @@ section.banner img{
     width: 100%;   
 }
 
-
 /*SECCION PRODUCTOS*/
 
 /*Titulares de las secciones*/
@@ -99,8 +97,7 @@ article {
     cursor: pointer;
     height: 320px;
     overflow: hidden;
-    transition: all 0.3s;
-       
+    transition: all 0.3s;     
 }
 
 article:hover{
@@ -111,7 +108,6 @@ article:hover{
 article img{
     width: 90%; /*Debemos centrar la sección ¿main? y que ocupe un 90% del ancho de la pantalla.*/   
 } 
-
 
 .product_detalles{
     position: relative;
@@ -140,7 +136,7 @@ article img{
 .fa-truck{
     transition: 0.5s;}
 
-.fa-truck:hover{
+.fa-truck:hover{/*Rotación del icono de Envío*/   
     transform: rotate(-90deg)}
 
 
@@ -253,7 +249,7 @@ footer {
      
     }
 
-    article:hover{/*permite visualizar la descripción del producto*/
+    article:hover{/*permite visualizar la descripción del producto al posicionarse encima del artículo*/
         height: 440px;
     }
 
